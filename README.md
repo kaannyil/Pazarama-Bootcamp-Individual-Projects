@@ -1,0 +1,1 @@
+# Pazarama-Bootcamp-Individual-Projects
