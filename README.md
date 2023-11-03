@@ -1,4 +1,4 @@
-# Pazarama-Bootcamp-Individual-Projects
+# Pazarama-Bootcamp-Projects
 
 Programmatic Design Case:
 
