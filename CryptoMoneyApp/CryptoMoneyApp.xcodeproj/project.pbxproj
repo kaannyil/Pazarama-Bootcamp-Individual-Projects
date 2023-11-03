@@ -20,6 +20,8 @@
 		CB5FD2222AE3E7BB009E6D27 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB5FD2212AE3E7BB009E6D27 /* RxSwift */; };
 		CB5FD22B2AE3F6A8009E6D27 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FD22A2AE3F6A8009E6D27 /* Extension+UIView.swift */; };
 		CB5FD22E2AE3F829009E6D27 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FD22D2AE3F829009E6D27 /* ViewControllerTableViewCell.swift */; };
+		CB5FD2302AE6EA6D009E6D27 /* CryptoViewModelClone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FD22F2AE6EA6D009E6D27 /* CryptoViewModelClone.swift */; };
+		CB5FD2322AE6ECE4009E6D27 /* ViewControllerClone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5FD2312AE6ECE4009E6D27 /* ViewControllerClone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		CB5FD2122AE3E5D9009E6D27 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		CB5FD22A2AE3F6A8009E6D27 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		CB5FD22D2AE3F829009E6D27 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		CB5FD22F2AE6EA6D009E6D27 /* CryptoViewModelClone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModelClone.swift; sourceTree = "<group>"; };
+		CB5FD2312AE6ECE4009E6D27 /* ViewControllerClone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerClone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5FD2122AE3E5D9009E6D27 /* CryptoViewModel.swift */,
+				CB5FD22F2AE6EA6D009E6D27 /* CryptoViewModelClone.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5FD1FA2AE3CA52009E6D27 /* ViewController.swift */,
+				CB5FD2312AE6ECE4009E6D27 /* ViewControllerClone.swift */,
 				CB5FD22D2AE3F829009E6D27 /* ViewControllerTableViewCell.swift */,
 			);
 			path = View;
@@ -216,9 +222,11 @@
 				CB5FD20E2AE3CA9A009E6D27 /* Crypto.swift in Sources */,
 				CB5FD22E2AE3F829009E6D27 /* ViewControllerTableViewCell.swift in Sources */,
 				CB5FD1FB2AE3CA52009E6D27 /* ViewController.swift in Sources */,
+				CB5FD2302AE6EA6D009E6D27 /* CryptoViewModelClone.swift in Sources */,
 				CB5FD1F72AE3CA52009E6D27 /* AppDelegate.swift in Sources */,
 				CB5FD2112AE3DEE5009E6D27 /* WebService.swift in Sources */,
 				CB5FD1F92AE3CA52009E6D27 /* SceneDelegate.swift in Sources */,
+				CB5FD2322AE6ECE4009E6D27 /* ViewControllerClone.swift in Sources */,
 				CB5FD2132AE3E5D9009E6D27 /* CryptoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

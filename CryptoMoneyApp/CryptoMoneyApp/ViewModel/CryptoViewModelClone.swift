@@ -1,20 +1,18 @@
 //
-//  CryptoViewModel.swift
+//  CryptoViewModelClone.swift
 //  CryptoMoneyApp
 //
-//  Created by Kaan Yıldırım on 21.10.2023.
+//  Created by Kaan Yıldırım on 23.10.2023.
 //
 
 import Foundation
 import RxSwift
-import RxCocoa
 
-
-class CryptoViewModel {
+class CryptoViewModelClone {
     
     let cryptos: PublishSubject<[Crypto]> = PublishSubject()
-    let error: PublishSubject<String> = PublishSubject()
     let loading: PublishSubject<Bool> = PublishSubject()
+    let error: PublishSubject<String> = PublishSubject()
     
     func requestData() {
         
@@ -24,18 +22,18 @@ class CryptoViewModel {
         
         WebService().downloadCurrencies(url: url) { result in
             self.loading.onNext(false)
+            
             switch result {
-            case .success(let cryptos):
-                self.cryptos.onNext(cryptos)
-                
+            case .success(let crypto):
+                self.cryptos.onNext(crypto)
             case .failure(let error):
                 switch error {
                 case .urlError:
-                    self.error.onNext("URL de hata var.")
-                case .decodingError:
-                    self.error.onNext("Decoding de hata var.")
+                    print("URL Error !")
                 case .serverError:
-                    self.error.onNext("Server da hata var.")
+                    print("Server Error !")
+                case .decodingError:
+                    print("Decoding Error !")
                 }
             }
         }
