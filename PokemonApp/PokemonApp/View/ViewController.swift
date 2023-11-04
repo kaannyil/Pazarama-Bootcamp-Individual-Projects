@@ -39,7 +39,7 @@ class ViewController: UIViewController, PokemonViewModelOutPut, PokemonDetailVie
         super.viewDidLoad()
         
         
-        view.backgroundColor = .red
+        view.backgroundColor = .yellow
         
         // viewModel.fetchPokemon()
         detailViewModel.fetchPokemonDetail("bulbasaur")
